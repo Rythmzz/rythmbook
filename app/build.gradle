@@ -37,6 +37,14 @@ android {
 
 dependencies {
 
+    // Koin
+
+    implementation 'io.insert-koin:koin-androidx-compose:3.1.2'
+
+    // Koin for Android
+    implementation("io.insert-koin:koin-android:3.2.0")
+    // or Koin for Lifecycle scoping
+    // or Koin for Android Architecture ViewModel
 
 
     implementation 'androidx.core:core-ktx:1.7.0'
