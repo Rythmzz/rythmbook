@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="@drawable/chip_custom"
+
+    >
+    <TextView
+        android:id="@+id/tvOptionTry"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Try it out"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvOptionLogin"
+        />
+    <TextView
+        android:id="@+id/tvOptionLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Log in"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tvOptionTry"
+        app:layout_constraintEnd_toStartOf="@+id/tvSignUp"
+        />
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Sign up"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvOptionLogin"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

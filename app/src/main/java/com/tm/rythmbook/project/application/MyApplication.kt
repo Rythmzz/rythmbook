@@ -22,8 +22,6 @@ class MyApplication : Application() {
 
     val appModule = module {
         single<MyRepository> {RepositoryImpl()}
-
         viewModel { MyViewModel(get()) }
-
     }
 }

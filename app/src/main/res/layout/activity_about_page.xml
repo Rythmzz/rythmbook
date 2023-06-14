@@ -1,46 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_color"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
 
-        <ImageView
-            android:background="@drawable/tm_wave_custom2"
-            android:id="@+id/ivAbout"
-            android:src="@drawable/tm_about_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-    <TextView
-
-        android:id="@+id/tvTitleName"
-        android:text="RYTHM BOOK"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/ivAbout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="50dp"
-        android:textStyle="bold|italic"
-        android:textColor="@color/main_text_color"
         />
-    <TextView
-        android:padding="5dp"
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvTitleName"
-        android:text="News and entertainment reading app"
-        android:textSize="16dp"
-        android:textColor="@color/main_text_color"
+        android:id="@+id/dotsIndicator"
+        android:layout_gravity="bottom|center"
+        app:dotsColor="@color/main_text_color"
+        app:selectedDotColor="@color/red_600"
+        android:padding="15dp"
+        app:dotsCornerRadius="8dp"
+        app:dotsSize="16dp"
+        app:dotsSpacing="4dp"
+        app:dotsWidthFactor="2.5"
         />
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

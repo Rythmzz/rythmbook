@@ -10,4 +10,5 @@
     <color name="main_color">#3d3d3d</color>
     <color name="main_support_color">#fef08a</color>
     <color name="main_text_color">#ffd154</color>
+    <color name="red_600">#dc2626</color>
 </resources>
