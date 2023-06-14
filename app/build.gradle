@@ -24,11 +24,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_18
+        targetCompatibility JavaVersion.VERSION_18
     }
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '18'
     }
     buildFeatures {
         viewBinding true
@@ -45,6 +45,9 @@ dependencies {
     implementation("io.insert-koin:koin-android:3.2.0")
     // or Koin for Lifecycle scoping
     // or Koin for Android Architecture ViewModel
+
+    //Indicator Dots
+    implementation("com.tbuonomo:dotsindicator:5.0")
 
 
     implementation 'androidx.core:core-ktx:1.7.0'
